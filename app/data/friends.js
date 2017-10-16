@@ -1,9 +1,8 @@
 
 
 var surveyArray = [{
-  "name":"Ahmed",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
+  "name":"Obama",
+  "photo":"http://img.timeinc.net/time/photoessays/2008/people_who_mattered/obama_main_1216.jpg":[
       5,
       1,
       4,
