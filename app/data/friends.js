@@ -15,6 +15,21 @@ var surveyArray = [{
       4,
       1
     ]},
+    {
+  "name":"Trump",
+  "photo":"http://static4.businessinsider.com/image/55918a4b6da811695ab77f22-480/rtx1gzco.jpg",
+  "scores":[
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]},
     ];
 
 module.exports = {
