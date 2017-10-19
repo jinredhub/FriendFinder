@@ -13,13 +13,15 @@ module.exports = function(app){
 	  // logic here
 	  // console.log(req.body.scores);
 	  // console.log(surveyArray.surveyArray[0].scores);
-	  var totalDifference = 0;
 	  var currentTotalDifference = 100;
 	  var bestMatchIndex = 0;
 	  for(var p=0;p<surveyArray.surveyArray.length;p++){
+	  	  var totalDifference = 0;
 		  for (var i=0;i<req.body.scores.length;i++){
 		  	totalDifference+=(Math.abs(parseInt(req.body.scores[i]) - parseInt(surveyArray.surveyArray[p].scores[i])));
-		  	if(currentTotalDifference > totalDifference){
+		  	console.log(totalDifference);
+		  	if(currentTotalDifference >= totalDifference){
+		  		currentTotalDifference = totalDifference;
 		  		bestMatchIndex = p;
 		  	}
 		  }
